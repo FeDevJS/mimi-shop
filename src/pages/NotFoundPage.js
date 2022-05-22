@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export const NotFound = () => {
+export const NotFoundPage = () => {
 	const selfEl = useRef(null);
 	useEffect(() => {
 		const self = selfEl.current;

@@ -1,21 +1,19 @@
-.product-nav-item-wrapper {
+.product-category-item-wrapper {
 	width: 100%;
 	max-width: 310px;
-	height: 90%;
+	height: 100%;
 	border: 2px solid white;
 	border-radius: 10px;
 }
-.tazas-nav-item-card {
-	justify-self: end;
+.tazas-category-item-card {
 	background: url('../assets/img/smile-cup.jpg') no-repeat;
 	background-size: 100% 100%;
 }
-.cuadernos-nav-item-card {
-	justify-self: start;
+.cuadernos-category-item-card {
 	background: url('../assets/img/notebook-bg.jpg') no-repeat;
 	background-size: 100% 100%;
 }
-.product-nav-title-container {
+.product-category-title-container {
 	display: grid;
 	justify-items: center;
 	align-items: center;
@@ -24,10 +22,19 @@
 	border-radius: 10px;
 	background-color: hsla(220, 50%, 5%, .50);
 }
-.product-nav-item-title {
+.product-category-item-title {
 	font-size: 2.3rem;
+	text-shadow: 1px 1px 5px hsl(0, 0%, 5%);
 	transition: .3s ease;
 }
-.product-nav-item-title:hover {
+.product-category-item-title:hover {
 	font-size: 2.5rem;
+}
+@media screen and (min-width: 600px) {
+	.tazas-category-item-card {
+		justify-self: end;
+	}
+	.cuadernos-category-item-card {
+		justify-self: start;
+	}
 }

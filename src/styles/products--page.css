@@ -1,0 +1,14 @@
+@media screen and (min-width: 340px) and (max-width: 600px) {
+	.products--section {
+		justify-items: center;
+		grid-template-rows: repeat(var(--products-categories), 268px);
+		row-gap: 10px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.products--section {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 100px;
+		justify-items: center;
+	}
+}
