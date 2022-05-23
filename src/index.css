@@ -40,11 +40,5 @@ a {
 .sections {
 	display: grid;
 	width: 100%;
-	min-height: 100%;
-	padding: 2rem;
-}
-@media screen and (min-width: 340px) and (max-width: 600px) {
-	.sections {
-		padding: 0;
-	}
+	height: 100%;
 }

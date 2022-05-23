@@ -4,14 +4,11 @@ import { ProductCategoryItem } from '../components/ProductCategoryItem';
 
 export const ProductsPage = () => {
 	const selfEl = useRef(null);
-	const productsCategories = useRef(null);
+	const categoriesMobileRows = useRef(null);
 	useEffect(() => {
-		productsCategories.current = document.querySelectorAll(".product-category-item-wrapper");
-		console.log(productsCategories.current.length)
 		const self = selfEl.current;
-		console.count(`Products mounted`)
+		categoriesMobileRows.current = document.querySelectorAll(".product-category-item-wrapper").length;
 		return() => {
-			console.count(`Products unmounted`);
 			self.remove();
 		};
 	}, []);

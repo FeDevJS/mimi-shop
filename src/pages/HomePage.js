@@ -5,9 +5,7 @@ export const HomePage = () => {
 	const selfEl = useRef(null);
 	useEffect(() => {
 		const self = selfEl.current;
-		console.log(`Home mounted`)
 		return() => {
-			console.log(`Home unmounted`);
 			self.remove();
 		};
 	}, []);
