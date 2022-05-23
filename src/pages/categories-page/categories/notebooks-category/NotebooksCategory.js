@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
+import './notebooks-category.css';
 
-export const Notebooks = () => {
+export const NotebooksCategory = () => {
 	const selfEl = useRef(null);
 	useEffect(() => {
 		const self = selfEl.current;

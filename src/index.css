@@ -14,7 +14,7 @@ body {
 	color: var(--primary-clr);
 	font-family: var(--main-ff);
 	min-height: 100vh;
-	background: url('./assets/img/bg-img.jpg') no-repeat;
+	background: url('./main-assets/img/bg-img.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: auto;
 }

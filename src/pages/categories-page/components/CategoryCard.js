@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/product-category-item.css';
+import './category-card.css'
 
-export const ProductCategoryItem = ({ productCategoryItemTitle }) => {
+export const CategoryCard = ({ productCategoryItemTitle }) => {
 	return(
 		<>
 			<article className={`product-category-item-wrapper ${productCategoryItemTitle.toLowerCase()}-category-item-card`}>

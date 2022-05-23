@@ -1,8 +1,11 @@
-import React from 'react';
-import '../styles/nav.css';
+import React, { useEffect } from 'react';
+import './nav.css';
 import { NavLink } from 'react-router-dom'
 
 export const Nav = () => {
+	useEffect(() => {
+		console.count("Nav mounted.");
+	}, []);
 	return(
 		<>
 			<nav className='nav-bar'>

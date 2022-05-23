@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import './not-found-page.css';
 
 export const NotFoundPage = () => {
 	const selfEl = useRef(null);

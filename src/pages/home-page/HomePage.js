@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../styles/home--page.css';
+import './home-page.css';
 
 export const HomePage = () => {
 	const selfEl = useRef(null);

@@ -9,11 +9,11 @@
 	animation: move .5s ease forwards;
 }
 .tazas-category-item-card {
-	background: url('../assets/img/smile-cup.jpg') no-repeat;
+	background: url('./assets/img/smile-cup.jpg') no-repeat;
 	background-size: 100% 100%;
 }
 .cuadernos-category-item-card {
-	background: url('../assets/img/notebook-bg.jpg') no-repeat;
+	background: url('./assets/img/notebook-bg.jpg') no-repeat;
 	background-size: 100% 100%;
 }
 .product-category-title-container {
