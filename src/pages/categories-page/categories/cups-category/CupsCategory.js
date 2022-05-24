@@ -1,15 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { useMount } from '../../../../hooks/useMount';
 import './cups-category.css';
 
 export const CupsCategory = () => {
-	const selfEl = useRef(null);
-	useEffect(() => {
-		const self = selfEl.current;
-		console.count(`Cups mounted`)
-		return() => {
-			console.count(`Cups unmounted`);
-			self.remove();
-		};
-	}, []);
-	return <h3 ref={selfEl}>Tazas</h3>
+	const self = useMount();
+	return <h3 ref={self}>Tazas</h3>
 };

@@ -1,15 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { useMount } from '../../../../hooks/useMount';
 import './notebooks-category.css';
 
 export const NotebooksCategory = () => {
-	const selfEl = useRef(null);
-	useEffect(() => {
-		const self = selfEl.current;
-		console.count(`Notebooks mounted`)
-		return() => {
-			console.count(`Notebooks unmounted`);
-			self.remove();
-		};
-	}, []);
-	return <h3 ref={selfEl}>Cuadernos</h3>
+	const self = useMount();
+	return <h3 ref={self}>Cuadernos</h3>
 };

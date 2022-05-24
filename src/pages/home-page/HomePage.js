@@ -1,17 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { useMount } from '../../hooks/useMount';
 import './home-page.css';
 
 export const HomePage = () => {
-	const selfEl = useRef(null);
-	useEffect(() => {
-		const self = selfEl.current;
-		return() => {
-			self.remove();
-		};
-	}, []);
+	const self = useMount();
 	return(
 		<>
-			<header ref={selfEl} className='main-header-container'>
+			<header ref={self} className='main-header-container'>
 				<h1 className='main-header'>
 					<span className='main-header-name'>MIMI</span>
 					<span className='main-header-heart'>-</span>

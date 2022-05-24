@@ -1,19 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { useMount } from '../../hooks/useMount';
 import './not-found-page.css';
 
 export const NotFoundPage = () => {
-	const selfEl = useRef(null);
-	useEffect(() => {
-		const self = selfEl.current;
-		console.count(`Not found mounted`)
-		return() => {
-			console.count(`Not found unmounted`);
-			self.remove();
-		};
-	}, []);
+	const self = useMount();
 	return(
 		<>
-			<p ref={selfEl} className='not-found-text'>Page not found</p>
+			<p ref={self} className='not-found-text'>Page not found</p>
 		</>
 	);
 };

@@ -1,20 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { useMount } from '../../hooks/useMount';
 import './categories-page.css';
 import { CategoryCard } from './components/CategoryCard';
 
 export const CategoriesPage = () => {
-	const selfEl = useRef(null);
-	useEffect(() => {
-		const self = selfEl.current;
-		console.count("Categories mounted");
-		return() => {
-			console.count("Categories unmounted");
-			self.remove();
-		};
-	}, []);
+	const self = useMount();
 	return(
 		<>
-			<section className='sections products--section' ref={selfEl}>
+			<section ref={self} className='sections products--section'>
 				<CategoryCard productCategoryItemTitle='Tazas' />
 				<CategoryCard productCategoryItemTitle='Cuadernos' />
 			</section>

@@ -7,6 +7,7 @@
 	border: 2px solid white;
 	border-radius: 10px;
 	animation: move .5s ease forwards;
+	box-shadow: 1px 1px 5px hsl(0, 0%, 5%);
 }
 .tazas-category-item-card {
 	background: url('./assets/img/smile-cup.jpg') no-repeat;
