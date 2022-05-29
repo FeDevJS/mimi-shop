@@ -1,0 +1,104 @@
+.product-card-wrapper {
+	display: grid;
+	grid-template-rows: 60% repeat(3, 60px);
+	row-gap: 5px;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	max-width: 300px;
+	min-height: 500px;
+	height: 100%;
+	max-height: 500px;
+	color: hsl(29, 60%, 93%);
+	border: 2px solid var(--primary-clr);
+	border-radius: var(--border-radius);
+	background-color: var(--transparent-clr);
+	box-shadow: -1px 1px 5px hsl(0, 0%, 5%);
+	letter-spacing: 1.5px;
+	transition: .3s ease;
+}
+.product-img-container {
+	width: 100%;
+	height: 100%;
+	padding: .5rem;
+}
+.product-img {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius);
+	background: url('https://ae01.alicdn.com/kf/H729071ed9d824dae90c6b7fa82049ae9u/400ML-Cute-Pig-Ceramic-Mug-Pink-Pig-Breakfast-Milk-Cup-With-Lid-Spoon-Lady-Gift-Coffee.jpg'), no-repeat;
+	background-size: 100% 100%;
+}
+.product-title-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 230px;
+	height: 100%;
+	font-size: 1.2rem;
+	border: 2px solid hsl(29, 60%, 93%);
+}
+.product-price-container {
+	width: 100%;
+}
+.product-price {
+	display: grid;
+	grid-template-columns: 58% 1fr;
+	column-gap: 5px;
+	width: 100%;
+	font-size: 1.5rem;
+}
+.price {
+	justify-self: end;
+}
+.quantity {
+	color: var(--secondary-clr);
+}
+.product-buttons-container {
+	display: grid;
+	grid-template-columns: repeat(2, 70px);
+	column-gap: 10px;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	padding: .5rem;
+}
+.buttons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 60px;
+	height: 100%;
+	color: var(--primary-clr);
+	font-size: 2.5rem;
+	border: 2px solid var(--primary-clr);
+	border-radius: var(--border-radius);
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: -1px 1px 5px hsl(0, 0%, 5%);
+	cursor: pointer;
+	transition: .2s ease;
+}
+.buttons:hover {
+	color: var(--secondary-clr);
+	border: 2px solid var(--secondary-clr);
+}
+.buttons:active {
+	transform: translateX(5px);
+}
+.buttons[disabled] {
+	color: hsl(0, 0%, 40%);
+	border: 2px solid hsl(0, 0%, 40%);
+	cursor: not-allowed;
+}
+@media screen and (min-width: 850px) {
+	.product-buttons-container {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+}
+.product-card-wrapper:hover {
+	transform: translateY(-5px);
+}

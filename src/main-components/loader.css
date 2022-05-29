@@ -1,0 +1,16 @@
+.loader {
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 300px;
+	height: 100%;
+	max-height: 300px;
+	border-left: 15px dotted #AFD671;
+	border-radius: 50%;
+	animation: loading 2s ease infinite;
+}
+@keyframes loading {
+	to {transform: rotate(360deg);}
+}
