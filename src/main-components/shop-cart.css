@@ -4,7 +4,7 @@
 	bottom: 0;
 	width: 100px;
 	height: 80px;
-	margin-right: 10px;
+	margin-right: 5px;
 	color: hsl(0, 0%, 95%);
 	border-radius: var(--border-radius);
 	z-index: 100;
@@ -52,4 +52,13 @@
 	.fa-cart-shopping {
 		font-size: 3.3rem;
 	}
+}
+.til {
+	animation: til 1s ease;
+}
+@keyframes til {
+	20% {	color: hsl(83, 55%, 40%); }
+	40% {color: inherit;}
+	60% {	color: hsl(83, 55%, 64%); }
+	100% {color: inherit;}
 }

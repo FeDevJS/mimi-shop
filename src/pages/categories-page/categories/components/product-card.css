@@ -1,6 +1,6 @@
 .product-card-wrapper {
 	display: grid;
-	grid-template-rows: 60% repeat(3, 60px);
+	grid-template-rows: 60% repeat(3, 1fr);
 	row-gap: 5px;
 	justify-items: center;
 	align-items: center;
@@ -43,61 +43,11 @@
 }
 .product-price {
 	display: grid;
-	grid-template-columns: 58% 1fr;
-	column-gap: 5px;
 	width: 100%;
 	font-size: 1.5rem;
 }
 .price {
-	justify-self: end;
-}
-.quantity {
-	color: var(--secondary-clr);
-}
-.product-buttons-container {
-	display: grid;
-	grid-template-columns: repeat(2, 70px);
-	column-gap: 10px;
-	justify-content: center;
-	width: 80%;
-	height: 100%;
-	padding: .5rem;
-}
-.buttons {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	max-width: 60px;
-	height: 100%;
-	color: var(--primary-clr);
-	font-size: 2.5rem;
-	border: 2px solid var(--primary-clr);
-	border-radius: var(--border-radius);
-	border-radius: 50%;
-	background: transparent;
-	box-shadow: -1px 1px 5px hsl(0, 0%, 5%);
-	cursor: pointer;
-	transition: .2s ease;
-}
-.buttons:hover {
-	color: var(--secondary-clr);
-	border: 2px solid var(--secondary-clr);
-}
-.buttons:active {
-	transform: translateX(5px);
-}
-.buttons[disabled] {
-	color: hsl(0, 0%, 40%);
-	border: 2px solid hsl(0, 0%, 40%);
-	cursor: not-allowed;
-}
-@media screen and (min-width: 850px) {
-	.product-buttons-container {
-		grid-template-columns: repeat(2, 1fr);
-		justify-items: center;
-	}
+	justify-self: center;
 }
 .product-card-wrapper:hover {
 	transform: translateY(-5px);

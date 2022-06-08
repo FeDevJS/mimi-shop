@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
+	row-gap: 20px;
 }
 .category-header {
 	display: flex;
@@ -16,9 +17,6 @@
 	transform: skew(-25deg);
 }
 @media screen and (min-width: 340px) and (max-width: 800px) {
-	.cups-category-section {
-		row-gap: 20px;
-	}
 	.category-header {
 		display: flex;
 		justify-content: center;

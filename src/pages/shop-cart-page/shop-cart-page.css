@@ -1,0 +1,12 @@
+.shop-cart-page-section {
+	grid-template-rows: repeat(auto-fit, 65px);
+	row-gap: 10px;
+}
+.cart-product {
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	justify-items: center;
+	align-items: center;
+	font-size: 1.3rem;
+	background: var(--transparent-clr);
+}
