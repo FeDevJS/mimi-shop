@@ -16,11 +16,12 @@
 	box-shadow: 1px 1px 5px var(--transparent-clr);
 	cursor: pointer;
 }
+.btn-link {
+	width: 100%;
+	height: 100%;
+}
 .buttons:hover {
 	color: var(--secondary-clr);
 	border: 3px solid var(--secondary-clr);
 	border-left: 3px solid var(--secondary-clr);
-}
-.buttons:active {
-	transform: translateX(5px);
 }
