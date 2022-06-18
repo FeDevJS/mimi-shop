@@ -1,7 +1,7 @@
 import { dataRequest } from "../helpers/dataRequest";
 
 export const counterReducer = (oldState, types) => {
-	const { cartData, setCartData, category, id } = types;
+	const { cartData, setCartData, category, id, navigate } = types;
 	const { cartCounter, cartProducts } = cartData;
 	switch(types.action) {
 		case 'add': 
@@ -20,9 +20,10 @@ export const counterReducer = (oldState, types) => {
 								cartProducts: [...cartProducts, ...newProduct]
 							});
 						};
+						navigate('/shop-cart')
 					});
 				}, 0);
-			return oldState = true;
+			return oldState;
 		case 'remove': 
 			setTimeout(() => {
 				const products = cartProducts.filter(prod => prod.id !== id);
@@ -32,7 +33,7 @@ export const counterReducer = (oldState, types) => {
 					cartProducts: [...products]
 				});
 			}, 0);
-			return oldState = false;
+			return oldState;
 		default: console.error("Ha habido un error.");
 	};
 };
