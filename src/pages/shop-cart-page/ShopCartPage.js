@@ -5,7 +5,7 @@ import { useMount } from '../../hooks/useMount';
 import './shop-cart-page.css';
 import { CartProduct } from './components/CartProduct';
 
-export const ShopCartPage = () => {
+const ShopCartPage = () => {
 	const self = useMount();
 	const { cartData } = useContext(ShopCartContext);
 	return(
@@ -14,6 +14,7 @@ export const ShopCartPage = () => {
 				{cartData.cartProducts.length > 0
 					? cartData.cartProducts.map(prod => (
 						<CartProduct 
+							key={prod.id}
 							id={prod.id}
 							name={prod.name}
 							quantity={prod.quantity}
@@ -26,3 +27,5 @@ export const ShopCartPage = () => {
 		</>
 	);
 };
+
+export default ShopCartPage;

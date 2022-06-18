@@ -3,7 +3,7 @@ import { useMount } from '../../hooks/useMount';
 import './categories-page.css';
 import { CategoryCard } from './components/CategoryCard';
 
-export const CategoriesPage = () => {
+const CategoriesPage = () => {
 	const self = useMount();
 	return(
 		<>
@@ -14,3 +14,5 @@ export const CategoriesPage = () => {
 		</>
 	);
 };
+
+export default CategoriesPage;
