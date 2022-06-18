@@ -6,7 +6,10 @@ export const NotFoundPage = () => {
 	const self = useMount();
 	return(
 		<>
-			<p ref={self} className='not-found-text'>Page not found</p>
+			<div className='text-container'>
+				<p ref={self} className='not-found-code'>UPS...</p>
+				<p ref={self} className='not-found-text'>Esta página (aún) no existe</p>
+			</div>
 		</>
 	);
 };
