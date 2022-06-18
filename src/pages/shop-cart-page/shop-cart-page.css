@@ -1,6 +1,7 @@
 .shop-cart-page-section {
-	grid-template-rows: repeat(auto-fit, 65px);
-	row-gap: 10px;
+	grid-template-rows: 15% repeat(auto-fit, 150px);
+	justify-items: center;
+	row-gap: 15px;
 }
 .cart-product {
 	display: grid;
@@ -9,4 +10,16 @@
 	align-items: center;
 	font-size: 1.3rem;
 	background: var(--transparent-clr);
+}
+.cart-header {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	max-height: 90px;
+	font-size: 2rem;
+	background: var(--transparent-clr);
+	border-radius: 5px;
+	text-shadow: -1px 1px 5px hsl(0, 0%, 5%);
+	transform: skew(-25deg);
 }

@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: 10% 1fr;
 	justify-items: center;
-	justify-content: center;
 	align-items: center;
 	width: 70%;
 	max-height: 90px;
@@ -18,7 +17,6 @@
 }
 .arrow-back:hover {
 	color: var(--secondary-clr);
-	/* transform: scale(1.05); */
 }
 @media screen and (min-width: 340px) and (max-width: 800px) {
 	.category-header {

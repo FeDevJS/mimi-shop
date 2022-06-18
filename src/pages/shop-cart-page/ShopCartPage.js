@@ -4,6 +4,7 @@ import { ShopCartContext } from '../../contexts/ShopCartProvider';
 import { useMount } from '../../hooks/useMount';
 import './shop-cart-page.css';
 import { CartProduct } from './components/CartProduct';
+import { NoProducts } from './components/NoProducts';
 
 const ShopCartPage = () => {
 	const self = useMount();
@@ -11,6 +12,7 @@ const ShopCartPage = () => {
 	return(
 		<>
 			<section ref={self} className='sections shop-cart-page-section'>
+				<h3 className='cart-header'>Carrito</h3>
 				{cartData.cartProducts.length > 0
 					? cartData.cartProducts.map(prod => (
 						<CartProduct 
@@ -21,7 +23,7 @@ const ShopCartPage = () => {
 							price={prod.price}
 						/>
 					))
-					: 'Sin productos en el carrito.'
+					: <NoProducts />
 				}
 			</section>
 		</>
