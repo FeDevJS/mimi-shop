@@ -1,5 +1,4 @@
 .no-products-container {
-	grid-row: span 3 / span 6;
 	display: flex;
 	justify-content: center;
 	align-items: center;

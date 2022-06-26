@@ -4,25 +4,3 @@
 	flex-flow: row wrap;
 	row-gap: 20px;
 }
-@media screen and (min-width: 340px) and (max-width: 800px) {
-	.categories-products-wrapper {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, 300px);
-		grid-template-rows: repeat(auto-fit, 500px);
-		justify-content: center;
-		column-gap: 50px;
-		row-gap: 20px;
-		width: 100%;
-	}
-}
-@media screen and (min-width: 800px) {
-	.categories-products-wrapper {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, 300px);
-		grid-template-rows: repeat(auto-fit, 500px);
-		justify-content: center;
-		column-gap: 50px;
-		row-gap: 20px;
-		width: 100%;
-	}
-}
